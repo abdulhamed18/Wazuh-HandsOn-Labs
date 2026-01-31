@@ -21,7 +21,7 @@ Wazuh can be used in both enterprise networks and small home lab environments.
 
 ---
 
-## How Wazuh Works (High-Level View)
+## How Wazuh Works
 
 Wazuh works using a client-server architecture:
 
@@ -37,7 +37,7 @@ Wazuh works using a client-server architecture:
 ## Main Components of Wazuh
 
 ### 1. Wazuh Agent
-- Runs on endpoint systems (Linux or Windows).
+- Runs on endpoint systems.
 - Gathers logs and security information.
 - Sends collected data to the Wazuh manager for analysis.
 
@@ -63,6 +63,21 @@ Wazuh works using a client-server architecture:
 - Shows alerts, logs, and system status.
 - Helps security analysts monitor and investigate incidents.
 
+---
+
+## Supported Platforms
+
+Wazuh central components run on 64-bit Linux systems such as:
+- Ubuntu
+- Red Hat Enterprise Linux
+- CentOS
+- Amazon Linux
+
+Wazuh agents can be installed on:
+- Linux systems
+- Windows systems
+- macOS systems
+  
 ---
 
 ## Main Capabilities of Wazuh
@@ -101,3 +116,4 @@ From this task, I learned:
 
 ## References
 - Wazuh Documentation: https://documentation.wazuh.com/current/quickstart.md
+
