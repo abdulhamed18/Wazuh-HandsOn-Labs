@@ -102,5 +102,4 @@ From this task, I learned:
 ---
 
 ## References
-- Wazuh Documentation: https://documentation.wazuh.com  
-- Wazuh Installation Guide: https://documentation.wazuh.com/current/quickstart.html 
+- Wazuh Assisted Installation Guide: https://documentation.wazuh.com/current/installation-guide/wazuh-server/installation-assistant.html
