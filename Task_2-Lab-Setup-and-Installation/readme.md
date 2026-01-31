@@ -71,7 +71,7 @@ sudo ./wazuh-install.sh -a
 ## Wazuh Dashboard Access
 The Wazuh dashboard can be accessed from a web browser using:
 ```
-https://<WAZUH_SERVER_IP[Ubuntu where Wazuh is installed]>
+https://<WAZUH_SERVER_IP>
 ````
 Login using the username and password provided at the end of the installation process.
 
@@ -88,3 +88,19 @@ After this, I was able to access the dashboard from the host browser using:
 ```
 https://127.0.0.1:8443
 ```
+
+---
+
+## Learning Outcome
+From this task, I learned:
+- How to set up a basic Wazuh lab environment using virtual machines  
+- Different installation methods available for Wazuh  
+- How to install Wazuh using the assisted installation script  
+- How to access the Wazuh dashboard after installation  
+- How to solve access issues using port forwarding in a NAT network  
+
+---
+
+## References
+- Wazuh Documentation: https://documentation.wazuh.com  
+- Wazuh Installation Guide: https://documentation.wazuh.com/current/quickstart.html 
