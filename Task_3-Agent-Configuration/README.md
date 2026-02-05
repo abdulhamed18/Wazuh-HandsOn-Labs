@@ -55,6 +55,7 @@ After installation, the Wazuh agent service must be started.
 ```powershell
 NET START Wazuh
 ```
+
 #### For Linux:
 ```bash
 sudo systemctl daemon-reload
@@ -122,3 +123,4 @@ If the agent does not appear as **Active**, the following checks can be performe
    - If the ping fails, check network configuration and firewall rules.
 
 After fixing these issues, refresh the Wazuh dashboard and verify that the agent status changes to **Active**.
+
