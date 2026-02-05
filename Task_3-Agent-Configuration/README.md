@@ -37,4 +37,5 @@ For a Windows endpoint:
 - Paste and run the generated installation command
 
 ```powershell
-<PASTE GENERATED AGENT INSTALLATION COMMAND HERE>
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.2-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='192.168.x.x'
+```
