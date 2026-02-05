@@ -36,7 +36,6 @@ This command is unique for each environment.
 ```powershell
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.2-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='<WAZUH_SERVER_IP>'
 ```
-- This command downloads and installs the Wazuh agent on the endpoint system.
 
 #### For a Linux(debian) endpoint:
 - Open **Terminal as Super User**
@@ -45,7 +44,7 @@ Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.2
 ```bash
 wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.14.2-1_amd64.deb && sudo WAZUH_MANAGER='<WAZUH_SERVER_IP>' dpkg -i ./wazuh-agent_4.14.2-1_amd64.deb
 ```
-- This command downloads and installs the Wazuh agent on the Linux system.
+- This command downloads and installs the Wazuh agent on the Endpoint system.
 
 ---
 
@@ -56,11 +55,12 @@ After installation, the Wazuh agent service must be started.
 ```powershell
 NET START Wazuh
 ```
-Once started, the agent begins communicating with the Wazuh server.
 #### For Linux:
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable wazuh-agent
 sudo systemctl start wazuh-agent
 ```
+Once started, the agent begins communicating with the Wazuh server.
+
 
