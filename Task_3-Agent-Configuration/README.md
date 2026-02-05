@@ -121,11 +121,5 @@ After fixing these issues, refresh the Wazuh dashboard and verify that the agent
 
 ---
 
-## References
-- Wazuh Documentation: https://documentation.wazuh.com  
-- Wazuh Agent Deployment (Dashboard): https://documentation.wazuh.com/current/user-manual/agents/agent-deployment.html  
+## References  
 - Wazuh Agent Installation Guide: https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html  
-- Wazuh Agent Troubleshooting: https://documentation.wazuh.com/current/user-manual/agents/troubleshooting.html  
-
-
-
