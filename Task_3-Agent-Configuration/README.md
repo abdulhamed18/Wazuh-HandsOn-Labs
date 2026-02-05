@@ -90,10 +90,10 @@ If the agent does not appear as **Active**, the following checks can be performe
    NET START Wazuh
    ```
 
-**Linux:**
-  ```bash
-  sudo systemctl restart wazuh-agent
-  ```
+   **Linux:**
+   ```bash
+   sudo systemctl restart wazuh-agent
+   ```
 
 ---
 
@@ -117,11 +117,12 @@ If the agent does not appear as **Active**, the following checks can be performe
 
 3. **Network Connectivity Check**
    Verify that the endpoint can reach the Wazuh server over the network.
-   ```bash
-   ping <WAZUH_SERVER_IP>
-   ```
-   - If the ping fails, check network configuration and firewall rules.
+      ```bash
+      ping <WAZUH_SERVER_IP>
+      ```
+      - If the ping fails, check network configuration and firewall rules.
 
 After fixing these issues, refresh the Wazuh dashboard and verify that the agent status changes to **Active**.
+
 
 
