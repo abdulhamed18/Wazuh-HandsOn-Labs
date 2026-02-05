@@ -71,7 +71,8 @@ sudo systemctl start wazuh-agent
 - The agent status should appear as **Active**
 - Agent details such as name, IP, and OS should be visible
 
-<img width="1813" height="728" alt="image" src="https://github.com/user-attachments/assets/f125c18d-1d71-45e8-ab63-603b21e2cd47" />
+<img width="1813" height="728" alt="image" src="https://github.com/user-attachments/assets/f125c18d-1d71-45e8-ab63-603b21e2cd47" /> 
 Figure 2: Agent successfully connected and active in dashboard
+
 
 
