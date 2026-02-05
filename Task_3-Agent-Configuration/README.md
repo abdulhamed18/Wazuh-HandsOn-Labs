@@ -98,18 +98,19 @@ If the agent does not appear as **Active**, the following checks can be performe
 ---
 
 2. **Verify Wazuh Manager IP**
-      - Confirm that the correct Wazuh server IP is configured in the agent settings.
-      **Linux:**
-      Check the manager address in:
-      ```bash
-      /var/ossec/etc/ossec.conf
-      ```
-      **Windows:**
-      Check the manager address in:
-      ```
-      C:\Program Files (x86)\ossec-agent\ossec.conf
-      ```
-      - An incorrect server IP will prevent the agent from connecting.
+   - Confirm that the correct Wazuh server IP is configured in the agent settings.
+   **Linux:**
+   Check the manager address in:
+   ```bash
+   /var/ossec/etc/ossec.conf
+   ```
+   
+   **Windows:**
+   Check the manager address in:
+   ```
+   C:\Program Files (x86)\ossec-agent\ossec.conf
+   ```
+   - An incorrect server IP will prevent the agent from connecting.
 
 ---
 
@@ -121,6 +122,7 @@ If the agent does not appear as **Active**, the following checks can be performe
       - If the ping fails, check network configuration and firewall rules.
 
 After fixing these issues, refresh the Wazuh dashboard and verify that the agent status changes to **Active**.
+
 
 
 
