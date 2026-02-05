@@ -95,8 +95,6 @@ If the agent does not appear as **Active**, the following checks can be performe
    sudo systemctl restart wazuh-agent
    ```
 
----
-
 2. **Verify Wazuh Manager IP**
    - Confirm that the correct Wazuh server IP is configured in the agent settings.
    **Linux:**
@@ -112,8 +110,6 @@ If the agent does not appear as **Active**, the following checks can be performe
    ```
    - An incorrect server IP will prevent the agent from connecting.
 
----
-
 3. **Network Connectivity Check**
    Verify that the endpoint can reach the Wazuh server over the network.
       ```bash
@@ -123,7 +119,13 @@ If the agent does not appear as **Active**, the following checks can be performe
 
 After fixing these issues, refresh the Wazuh dashboard and verify that the agent status changes to **Active**.
 
+---
 
+## References
+- Wazuh Documentation: https://documentation.wazuh.com  
+- Wazuh Agent Deployment (Dashboard): https://documentation.wazuh.com/current/user-manual/agents/agent-deployment.html  
+- Wazuh Agent Installation Guide: https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html  
+- Wazuh Agent Troubleshooting: https://documentation.wazuh.com/current/user-manual/agents/troubleshooting.html  
 
 
 
