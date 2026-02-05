@@ -73,7 +73,7 @@ sudo systemctl start wazuh-agent
 - Agent details such as name, IP, and OS should be visible
 
 <img width="1813" height="728" alt="image" src="https://github.com/user-attachments/assets/f125c18d-1d71-45e8-ab63-603b21e2cd47" /> 
-Figure 2: Agent successfully connected and active in dashboard
+Figure 2: Linux (Ubuntu) Agent successfully connected and active in dashboard
 
 ### If Agent is Not Showing as Active (Troubleshooting)
 
@@ -123,3 +123,4 @@ After fixing these issues, refresh the Wazuh dashboard and verify that the agent
 
 ## References  
 - Wazuh Agent Installation Guide: https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html  
+
