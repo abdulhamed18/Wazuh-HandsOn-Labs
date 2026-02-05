@@ -14,7 +14,7 @@ Navigate to:
 This section allows us to generate agent installation commands based on the selected operating system.
 
 <img width="1757" height="703" alt="image" src="https://github.com/user-attachments/assets/923ec546-9829-476d-8733-04834dfd768c" />
-`Figure 1: Wazuh dashboard – Agent management section`
+Figure 1: Wazuh dashboard – Agent management section
 
 ---
 
@@ -61,6 +61,18 @@ sudo systemctl daemon-reload
 sudo systemctl enable wazuh-agent
 sudo systemctl start wazuh-agent
 ```
-Once started, the agent begins communicating with the Wazuh server.
+- Once started, the agent begins communicating with the Wazuh server.
 
+---
+
+### Step 5: Verify Agent Connection in Dashboard
+
+Return to the Wazuh dashboard and refresh the Agents section.
+
+The agent status should appear as **Active**
+
+Agent details such as name, IP, and OS should be visible
+
+📸 Screenshot:
+Figure 2: Agent successfully connected and active in dashboard
 
