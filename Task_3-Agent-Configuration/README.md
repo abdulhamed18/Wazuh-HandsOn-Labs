@@ -74,5 +74,51 @@ sudo systemctl start wazuh-agent
 <img width="1813" height="728" alt="image" src="https://github.com/user-attachments/assets/f125c18d-1d71-45e8-ab63-603b21e2cd47" /> 
 Figure 2: Agent successfully connected and active in dashboard
 
+### If Agent is Not Showing as Active (Troubleshooting)
+
+If the agent does not appear as **Active**, the following checks can be performed:
 
 
+1. **Check Agent Service Status**
+   Make sure the Wazuh agent service is running.  
+   If needed, restart the service.
+
+   **Windows:**
+   ```powershell
+   NET STOP Wazuh
+   NET START Wazuh
+   ```
+
+**Linux:**
+  ```bash
+  sudo systemctl restart wazuh-agent
+  ```
+
+---
+
+2. **Verify Wazuh Manager IP**
+  - Confirm that the correct Wazuh server IP is configured in the agent settings.
+
+   **Linux:**
+   Check the manager address in:
+   ```bash
+   /var/ossec/etc/ossec.conf
+   ```
+
+   **Windows:**
+   Check the manager address in:
+   ```
+   C:\Program Files (x86)\ossec-agent\ossec.conf
+   ```
+   - An incorrect server IP will prevent the agent from connecting.
+
+---
+
+3. **Network Connectivity Check**
+   Verify that the endpoint can reach the Wazuh server over the network.
+   ```bash
+   ping <WAZUH_SERVER_IP>
+   ```
+   - If the ping fails, check network configuration and firewall rules.
+
+After fixing these issues, refresh the Wazuh dashboard and verify that the agent status changes to **Active**.
