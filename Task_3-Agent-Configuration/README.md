@@ -37,9 +37,9 @@ This command is unique for each environment.
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.2-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='<WAZUH_SERVER_IP>'
 ```
 
-#### For a Linux(debian) endpoint:
-- Open **Terminal as Super User**
-- Paste and run the generated installation command
+   #### For a Linux(debian) endpoint:
+   - Open **Terminal as Super User**
+   - Paste and run the generated installation command
 
 ```bash
 wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.14.2-1_amd64.deb && sudo WAZUH_MANAGER='<WAZUH_SERVER_IP>' dpkg -i ./wazuh-agent_4.14.2-1_amd64.deb
@@ -123,4 +123,5 @@ If the agent does not appear as **Active**, the following checks can be performe
    - If the ping fails, check network configuration and firewall rules.
 
 After fixing these issues, refresh the Wazuh dashboard and verify that the agent status changes to **Active**.
+
 
